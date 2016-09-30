@@ -1,0 +1,23 @@
+body
+{
+	width:70%;
+	margin:auto;
+}
+
+.list
+{
+	padding:0px;
+	text-align: center;
+}
+
+h1
+{
+	text-align: center;
+}
+
+.item_list
+{
+
+	list-style: none;
+	margin-bottom: 2%;
+}
