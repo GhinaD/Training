@@ -53,8 +53,7 @@ try {
         //Compare the passwords.
 
         if(strcmp($password,$user['ClientPwd']) ==0)
-        {            
-            //Redirect to our protected page, which we called home.php
+        {                        
             echo "Welcome ". $user['ClientName'];
             exit;            
         }        
