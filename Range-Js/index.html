@@ -1,0 +1,60 @@
+<head>
+<link rel="stylesheet" type="text/css"  href="index.css"/>
+</head>
+<body>
+<form action="" method="get">
+  <input type="range" name="points" min="0" max="50" value="25" step="5" id="click1" onclick="paragfunction(this)">
+  <input type="range" name="points" min="0" max="50" value="25" step="5" id="click2" class="center-range" onclick="paragfunction(this)">
+  <input type="range" name="points" min="0" max="50" value="25" step="5" id="click3" onclick="paragfunction(this)" >
+</form>
+<p class="firstparag" id="parag1"> hello 1 </p>
+
+<p class="firstparag" id="parag2"> hello 2 </p>
+
+<p class="firstparag" id="parag3"> hello 3 </p>
+
+<script>
+function paragfunction(el)
+{	
+	var c=el.id;
+	if (c=="click1")
+	{
+		var g=document.getElementById('parag1');
+		g.style.display='block';
+
+		var h=document.getElementById('parag2');
+		h.style.display='none';
+
+		var i=document.getElementById('parag3');
+		i.style.display='none';
+
+	}
+
+	if (c=="click2")
+	{
+		var g=document.getElementById('parag1');
+		g.style.display='none';
+
+		var h=document.getElementById('parag2');
+		h.style.display='block';
+
+		var i=document.getElementById('parag3');
+		i.style.display='none';
+
+	}
+
+	if (c=="click3")
+	{
+		var g=document.getElementById('parag1');
+		g.style.display='none';
+
+		var h=document.getElementById('parag2');
+		h.style.display='none';
+
+		var i=document.getElementById('parag3');
+		i.style.display='block';
+
+	}
+}
+</script>
+</body>
